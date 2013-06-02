@@ -10,21 +10,12 @@
 		C39E5271175BAEE1007E9DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E5270175BAEE1007E9DBD /* Foundation.framework */; };
 		C39E527C175BAEF7007E9DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E5270175BAEE1007E9DBD /* Foundation.framework */; };
 		C39E527D175BAF13007E9DBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24745767086B740A4C9E2F /* Cocoa.framework */; };
-		FD2471906465539AFAF6F506 /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24741B67A053B1948DA5FF /* NSImage+Resize.m */; };
-		FD2476D4D5B0068470010893 /* LarussoSTD.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2471A58C1EF6D2B2439759 /* LarussoSTD.h */; };
-		FD2478F373A61897C56AF44C /* NSImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = FD247B4FD53C93A7216EF354 /* NSImage+Resize.h */; };
-		FD247EB57AB8D486E8A65E7D /* LarussoSTD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2470DAF622A7E1A9464BAE /* LarussoSTD.m */; };
+		C39E52A0175BE692007E9DBD /* LarussoSTD.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E529A175BE692007E9DBD /* LarussoSTD.h */; };
+		C39E52A1175BE692007E9DBD /* LarussoSTD.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E529B175BE692007E9DBD /* LarussoSTD.m */; };
+		C39E52A3175BE692007E9DBD /* NSImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E529D175BE692007E9DBD /* NSImage+Resize.h */; };
+		C39E52A4175BE692007E9DBD /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E529E175BE692007E9DBD /* NSImage+Resize.m */; };
+		C39E52A8175BE731007E9DBD /* LarussoSTD-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C39E52A6175BE731007E9DBD /* LarussoSTD-Prefix.pch */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C39E5282175BB44C007E9DBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C39E523C175B510F007E9DBD;
-			remoteInfo = "OSX Tests";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C39E526D175BAEE1007E9DBD /* CopyFiles */ = {
@@ -41,16 +32,16 @@
 /* Begin PBXFileReference section */
 		C39E526F175BAEE1007E9DBD /* liblarussoSTDiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblarussoSTDiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E5270175BAEE1007E9DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C39E5274175BAEE1007E9DBD /* LarussoSTDiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LarussoSTDiOS-Prefix.pch"; path = "LarussoSTDiOS/LarussoSTDiOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = larussoSTDTests.xcodeproj; path = Tests/larussoSTDTests.xcodeproj; sourceTree = "<group>"; };
-		FD2470DAF622A7E1A9464BAE /* LarussoSTD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LarussoSTD.m; sourceTree = "<group>"; };
-		FD2471A58C1EF6D2B2439759 /* LarussoSTD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LarussoSTD.h; sourceTree = "<group>"; };
-		FD24741B67A053B1948DA5FF /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
+		C39E5285175BCFF8007E9DBD /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		C39E529A175BE692007E9DBD /* LarussoSTD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LarussoSTD.h; sourceTree = "<group>"; };
+		C39E529B175BE692007E9DBD /* LarussoSTD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LarussoSTD.m; sourceTree = "<group>"; };
+		C39E529D175BE692007E9DBD /* NSImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Resize.h"; sourceTree = "<group>"; };
+		C39E529E175BE692007E9DBD /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
+		C39E52A6175BE731007E9DBD /* LarussoSTD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LarussoSTD-Prefix.pch"; path = "../LarussoSTD-Prefix.pch"; sourceTree = "<group>"; };
+		C39E52A7175BE731007E9DBD /* LarussoSTDiOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LarussoSTDiOS-Prefix.pch"; path = "../LarussoSTDiOS-Prefix.pch"; sourceTree = "<group>"; };
 		FD24745767086B740A4C9E2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FD24757440B8D77DDEF6F1B4 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		FD2476F16977BFEC094191FF /* larussoSTD.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = larussoSTD.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD247B4FD53C93A7216EF354 /* NSImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Resize.h"; sourceTree = "<group>"; };
-		FD247C3EB3D76318E9E0777E /* LarussoSTD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LarussoSTD-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,31 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C39E527F175BB44B007E9DBD /* Products */ = {
+		C39E5298175BE692007E9DBD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C39E5283175BB44C007E9DBD /* OSX Tests.octest */,
+				C39E52A5175BE6F3007E9DBD /* Supporting Files */,
+				C39E529A175BE692007E9DBD /* LarussoSTD.h */,
+				C39E529B175BE692007E9DBD /* LarussoSTD.m */,
+				C39E529D175BE692007E9DBD /* NSImage+Resize.h */,
+				C39E529E175BE692007E9DBD /* NSImage+Resize.m */,
 			);
-			name = Products;
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
-		FD24721BF0FCC544E6113DD9 /* LarussoSTD */ = {
+		C39E52A5175BE6F3007E9DBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD24723D885F1E8EF40F6493 /* Supporting Files */,
-				FD2471A58C1EF6D2B2439759 /* LarussoSTD.h */,
-				FD2470DAF622A7E1A9464BAE /* LarussoSTD.m */,
-				FD24741B67A053B1948DA5FF /* NSImage+Resize.m */,
-				FD247B4FD53C93A7216EF354 /* NSImage+Resize.h */,
-			);
-			path = LarussoSTD;
-			sourceTree = "<group>";
-		};
-		FD24723D885F1E8EF40F6493 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C39E5274175BAEE1007E9DBD /* LarussoSTDiOS-Prefix.pch */,
-				FD247C3EB3D76318E9E0777E /* LarussoSTD-Prefix.pch */,
+				C39E52A6175BE731007E9DBD /* LarussoSTD-Prefix.pch */,
+				C39E52A7175BE731007E9DBD /* LarussoSTDiOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,10 +89,10 @@
 		FD247624BA48108696A6AFCB = {
 			isa = PBXGroup;
 			children = (
-				C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */,
+				C39E5298175BE692007E9DBD /* Classes */,
+				C39E5285175BCFF8007E9DBD /* Rakefile */,
 				FD247BB6C562A45C6EBDFCAC /* Products */,
 				FD247EF03CE712558754F4E9 /* Frameworks */,
-				FD24721BF0FCC544E6113DD9 /* LarussoSTD */,
 				FD24757440B8D77DDEF6F1B4 /* .travis.yml */,
 			);
 			sourceTree = "<group>";
@@ -139,8 +122,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD2476D4D5B0068470010893 /* LarussoSTD.h in Headers */,
-				FD2478F373A61897C56AF44C /* NSImage+Resize.h in Headers */,
+				C39E52A0175BE692007E9DBD /* LarussoSTD.h in Headers */,
+				C39E52A3175BE692007E9DBD /* NSImage+Resize.h in Headers */,
+				C39E52A8175BE731007E9DBD /* LarussoSTD-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +184,6 @@
 			mainGroup = FD247624BA48108696A6AFCB;
 			productRefGroup = FD247BB6C562A45C6EBDFCAC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C39E527F175BB44B007E9DBD /* Products */;
-					ProjectRef = C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FD247E350C2591186D0168EA /* larussoSTD */,
@@ -213,16 +191,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C39E5283175BB44C007E9DBD /* OSX Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "OSX Tests.octest";
-			remoteRef = C39E5282175BB44C007E9DBD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C39E526B175BAEE1007E9DBD /* Sources */ = {
@@ -236,8 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD247EB57AB8D486E8A65E7D /* LarussoSTD.m in Sources */,
-				FD2471906465539AFAF6F506 /* NSImage+Resize.m in Sources */,
+				C39E52A1175BE692007E9DBD /* LarussoSTD.m in Sources */,
+				C39E52A4175BE692007E9DBD /* NSImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +307,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LarussoSTD/LarussoSTD-Prefix.pch";
+				GCC_PREFIX_HEADER = "LarussoSTD-Prefix.pch";
 				PRODUCT_NAME = larussoSTD;
 				VERSION_INFO_FILE = "$(PRODUCT_NAME)";
 			};
@@ -352,7 +320,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LarussoSTD/LarussoSTD-Prefix.pch";
+				GCC_PREFIX_HEADER = "LarussoSTD-Prefix.pch";
 				PRODUCT_NAME = larussoSTD;
 				VERSION_INFO_FILE = "$(PRODUCT_NAME)";
 			};
@@ -368,6 +336,7 @@
 				C39E527B175BAEE1007E9DBD /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD24735DFE533DA62B656D51 /* Build configuration list for PBXProject "larussoSTD" */ = {
 			isa = XCConfigurationList;

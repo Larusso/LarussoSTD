@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD247E350C2591186D0168EA"
-               BuildableName = "larussoSTD.dylib"
-               BlueprintName = "larussoSTD"
-               ReferencedContainer = "container:larussoSTD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD24732584C9A21926D938CE"
-               BuildableName = "LarussoSTDTests.octest"
-               BlueprintName = "LarussoSTDTests"
+               BlueprintIdentifier = "C39E526E175BAEE1007E9DBD"
+               BuildableName = "liblarussoSTDiOS.a"
+               BlueprintName = "larussoSTDiOS"
                ReferencedContainer = "container:larussoSTD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD24732584C9A21926D938CE"
-               BuildableName = "LarussoSTDTests.octest"
-               BlueprintName = "LarussoSTDTests"
-               ReferencedContainer = "container:larussoSTD.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
