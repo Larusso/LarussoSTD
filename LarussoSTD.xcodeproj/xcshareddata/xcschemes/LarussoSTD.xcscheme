@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FD247E350C2591186D0168EA"
-               BuildableName = "LarussoSTD.dylib"
-               BlueprintName = "LarussoSTD"
-               ReferencedContainer = "container:LarussoSTD.xcodeproj">
+               BuildableName = "larussoSTD.dylib"
+               BlueprintName = "larussoSTD"
+               ReferencedContainer = "container:larussoSTD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "FD24732584C9A21926D938CE"
                BuildableName = "LarussoSTDTests.octest"
                BlueprintName = "LarussoSTDTests"
-               ReferencedContainer = "container:LarussoSTD.xcodeproj">
+               ReferencedContainer = "container:larussoSTD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "FD24732584C9A21926D938CE"
                BuildableName = "LarussoSTDTests.octest"
                BlueprintName = "LarussoSTDTests"
-               ReferencedContainer = "container:LarussoSTD.xcodeproj">
+               ReferencedContainer = "container:larussoSTD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
