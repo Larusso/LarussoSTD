@@ -16,6 +16,16 @@
 		FD247EB57AB8D486E8A65E7D /* LarussoSTD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2470DAF622A7E1A9464BAE /* LarussoSTD.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C39E5282175BB44C007E9DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C39E523C175B510F007E9DBD;
+			remoteInfo = "OSX Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C39E526D175BAEE1007E9DBD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -32,6 +42,7 @@
 		C39E526F175BAEE1007E9DBD /* liblarussoSTDiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblarussoSTDiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E5270175BAEE1007E9DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C39E5274175BAEE1007E9DBD /* LarussoSTDiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LarussoSTDiOS-Prefix.pch"; path = "LarussoSTDiOS/LarussoSTDiOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = larussoSTDTests.xcodeproj; path = Tests/larussoSTDTests.xcodeproj; sourceTree = "<group>"; };
 		FD2470DAF622A7E1A9464BAE /* LarussoSTD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LarussoSTD.m; sourceTree = "<group>"; };
 		FD2471A58C1EF6D2B2439759 /* LarussoSTD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LarussoSTD.h; sourceTree = "<group>"; };
 		FD24741B67A053B1948DA5FF /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
@@ -63,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C39E527F175BB44B007E9DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C39E5283175BB44C007E9DBD /* OSX Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FD24721BF0FCC544E6113DD9 /* LarussoSTD */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,7 @@
 		FD247624BA48108696A6AFCB = {
 			isa = PBXGroup;
 			children = (
+				C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */,
 				FD247BB6C562A45C6EBDFCAC /* Products */,
 				FD247EF03CE712558754F4E9 /* Frameworks */,
 				FD24721BF0FCC544E6113DD9 /* LarussoSTD */,
@@ -180,6 +200,12 @@
 			mainGroup = FD247624BA48108696A6AFCB;
 			productRefGroup = FD247BB6C562A45C6EBDFCAC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C39E527F175BB44B007E9DBD /* Products */;
+					ProjectRef = C39E527E175BB44B007E9DBD /* larussoSTDTests.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FD247E350C2591186D0168EA /* larussoSTD */,
@@ -187,6 +213,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C39E5283175BB44C007E9DBD /* OSX Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OSX Tests.octest";
+			remoteRef = C39E5282175BB44C007E9DBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C39E526B175BAEE1007E9DBD /* Sources */ = {
