@@ -7,4 +7,4 @@ A library for cocoa based applications with untility helper classes.
 
 ## License
 
-AFNetworking is available under the MIT license. See the LICENSE file for more info.
+LarussoSTD is available under the MIT license. See the LICENSE file for more info.
