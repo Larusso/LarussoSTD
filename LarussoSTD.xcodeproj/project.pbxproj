@@ -40,6 +40,7 @@
 		FD2474E7C751774E9C9867C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD24753A827800508006AC1D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FD24755BD502CA1BE22AB4CA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FD24757440B8D77DDEF6F1B4 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		FD2476F16977BFEC094191FF /* LarussoSTD.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = LarussoSTD.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD247A080FA639249ADCB9AF /* LarussoSTDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LarussoSTDTests-Info.plist"; sourceTree = "<group>"; };
 		FD247AFB94DE3A3A3EBC7728 /* NSImageResizeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImageResizeTest.h; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 				FD247EF03CE712558754F4E9 /* Frameworks */,
 				FD24721BF0FCC544E6113DD9 /* LarussoSTD */,
 				FD247301D00D646106D08F03 /* LarussoSTDTests */,
+				FD24757440B8D77DDEF6F1B4 /* .travis.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 		FD247D72CB3CC4FEC55E39BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = larusso;
 			};
 			buildConfigurationList = FD24735DFE533DA62B656D51 /* Build configuration list for PBXProject "LarussoSTD" */;
@@ -372,6 +375,7 @@
 		FD247BD6F4F5DF4C54B7DEFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -397,6 +401,7 @@
 		FD247C44381A2EFAA0B2D8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
