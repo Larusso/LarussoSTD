@@ -6,7 +6,7 @@ namespace :test do
 
   desc "Run the AFNetworking Tests for Mac OS X"
   task :osx => :prepare do
-    $osx_success = system("xctool -workspace larussoSTD.xcworkspace -scheme 'OSX Tests' build -sdk macosx -configuration Release")
+    $osx_success = system("xctool -workspace larussoSTD.xcworkspace -scheme 'larussoSTD' build -sdk macosx -configuration Release")
     $osx_success = system("xctool -workspace larussoSTD.xcworkspace -scheme 'OSX Tests' build-tests -sdk macosx -configuration Release")
     $osx_success = system("xctool -workspace larussoSTD.xcworkspace -scheme 'OSX Tests' test -test-sdk macosx -sdk macosx -configuration Release")
   end
