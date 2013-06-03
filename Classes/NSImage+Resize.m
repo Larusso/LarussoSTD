@@ -42,7 +42,7 @@
 
 - (NSImage *)imageScaledToFitWidth:(NSSize)size
 {
-    return [self imageToFitSize:size method:LAImageResizeScaleHeight];
+    return [self imageToFitSize:size method:LAImageResizeScaleWidth];
 }
 
 
@@ -73,7 +73,7 @@
     if (resizeMethod == LAImageResizeScaleWidth)
     {
         destinationRect.size.width = targetWidth;
-        destinationRect.size.height = sourceHeight * factorWidth;
+        destinationRect.size.height = MIN(sourceHeight * factorWidth, targetHeight);
         destinationRect.origin.x = 0;
         destinationRect.origin.y = 0;
 
@@ -83,7 +83,7 @@
 
     if (resizeMethod == LAImageResizeScaleHeight)
     {
-        destinationRect.size.width = sourceWidth * factorHeight;
+        destinationRect.size.width = MIN(sourceWidth * factorHeight,targetWidth);
         destinationRect.size.height = targetHeight;
         destinationRect.origin.x = 0;
         destinationRect.origin.y = 0;
