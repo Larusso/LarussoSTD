@@ -36,7 +36,8 @@ typedef enum
     LAImageResizeScaleWidth
 } LAImageResizingMethod;
 
-- (NSImage *)imageToFitSize:(NSSize)size method:(LAImageResizingMethod)resizeMethod;
+- (NSImage *)imageToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod;
+- (NSImage *)imageToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod andCrop:(BOOL) crop;
 
 - (NSImage *)imageCroppedToFitSize:(NSSize)size;
 
@@ -44,8 +45,12 @@ typedef enum
 
 - (NSImage *)imageScaledToFitHeight:(NSSize)size;
 
+- (NSImage *)imageScaledToFitHeight:(NSSize)size andCropWidth:(BOOL)crop;
+
 - (NSImage *)imageScaledToFitWidth:(NSSize)size;
 
-- (LAResizeRects)getResizeRectToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod;
+- (NSImage *)imageScaledToFitWidth:(NSSize)size andCropHeight:(BOOL)crop;
+
+- (LAResizeRects)getResizeRectToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod andCrop:(BOOL) crop;
 
 @end

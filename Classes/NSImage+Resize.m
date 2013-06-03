@@ -10,9 +10,14 @@
 
 @implementation NSImage (Resize)
 
-- (NSImage *)imageToFitSize:(NSSize)size method:(LAImageResizingMethod)resizeMethod
+- (NSImage *)imageToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod
 {
-    LAResizeRects resizeRect = [self getResizeRectToFitSize:size withMethod:resizeMethod];
+    return [self imageToFitSize:size withMethod:resizeMethod andCrop:NO];
+}
+
+- (NSImage *)imageToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod andCrop:(BOOL)crop
+{
+    LAResizeRects resizeRect = [self getResizeRectToFitSize:size withMethod:resizeMethod andCrop:crop];
     NSImage *result = [[NSImage alloc] initWithSize:resizeRect.destinationRect.size];
 
     // Composite image appropriately
@@ -24,31 +29,42 @@
     return result;
 }
 
+
 - (NSImage *)imageCroppedToFitSize:(NSSize)size
 {
-    return [self imageToFitSize:size method:LAImageResizeCrop];
+    return [self imageToFitSize:size withMethod:LAImageResizeCrop andCrop:YES];
 }
 
 - (NSImage *)imageScaledToFitSize:(NSSize)size
 {
 
-    return [self imageToFitSize:size method:LAImageResizeScale];
+    return [self imageToFitSize:size withMethod:LAImageResizeScale andCrop:NO];
 }
 
 - (NSImage *)imageScaledToFitHeight:(NSSize)size
 {
-    return [self imageToFitSize:size method:LAImageResizeScaleHeight];
+    return [self imageToFitSize:size withMethod:LAImageResizeScaleHeight andCrop:NO];
+}
+
+- (NSImage *)imageScaledToFitHeight:(NSSize)size andCropWidth:(BOOL)crop
+{
+    return [self imageToFitSize:size withMethod:LAImageResizeScaleHeight andCrop:crop];
 }
 
 - (NSImage *)imageScaledToFitWidth:(NSSize)size
 {
-    return [self imageToFitSize:size method:LAImageResizeScaleWidth];
+    return [self imageToFitSize:size withMethod:LAImageResizeScaleWidth andCrop:NO];
+}
+
+- (NSImage *)imageScaledToFitWidth:(NSSize)size andCropHeight:(BOOL)crop
+{
+    return [self imageToFitSize:size withMethod:LAImageResizeScaleWidth andCrop:crop];
 }
 
 
 #pragma mark - utility methods
 
-- (LAResizeRects)getResizeRectToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod
+- (LAResizeRects)getResizeRectToFitSize:(NSSize)size withMethod:(LAImageResizingMethod)resizeMethod andCrop:(BOOL)crop;
 {
     float sourceWidth = [self size].width;
     float sourceHeight = [self size].height;
@@ -73,7 +89,13 @@
     if (resizeMethod == LAImageResizeScaleWidth)
     {
         destinationRect.size.width = targetWidth;
-        destinationRect.size.height = MIN(sourceHeight * factorWidth, targetHeight);
+        destinationRect.size.height = sourceHeight * factorWidth;
+
+        if (crop)
+        {
+            destinationRect.size.height = MIN(destinationRect.size.height, targetHeight);
+        }
+
         destinationRect.origin.x = 0;
         destinationRect.origin.y = 0;
 
@@ -83,10 +105,15 @@
 
     if (resizeMethod == LAImageResizeScaleHeight)
     {
-        destinationRect.size.width = MIN(sourceWidth * factorHeight,targetWidth);
+        destinationRect.size.width = sourceWidth * factorHeight;
         destinationRect.size.height = targetHeight;
         destinationRect.origin.x = 0;
         destinationRect.origin.y = 0;
+
+        if (crop)
+        {
+            destinationRect.size.width = MIN(destinationRect.size.width, targetWidth);
+        }
 
         sourceRect = CGRectMake(0, 0, targetWidth * factorHeight, sourceHeight);
     }
