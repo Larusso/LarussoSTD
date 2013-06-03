@@ -1,7 +1,7 @@
 LarussoSTD
 ===
 
-A library for cocoa based applications with untility helper classes.
+A library for cocoa based applications with utility helper classes.
 
 [![Build Status](https://travis-ci.org/Larusso/LarussoSTD.png?branch=develop)](https://travis-ci.org/Larusso/LarussoSTD)
 
