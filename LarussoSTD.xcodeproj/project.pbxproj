@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33263231900099C00668C67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24745767086B740A4C9E2F /* Cocoa.framework */; };
+		C332632D1900099C00668C67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C332632B1900099C00668C67 /* InfoPlist.strings */; };
+		C332632F1900099C00668C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C332632E1900099C00668C67 /* main.m */; };
+		C33263331900099C00668C67 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C33263311900099C00668C67 /* Credits.rtf */; };
+		C33263361900099C00668C67 /* LAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C33263351900099C00668C67 /* LAAppDelegate.m */; };
+		C33263391900099C00668C67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33263371900099C00668C67 /* MainMenu.xib */; };
+		C332633B1900099C00668C67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332633A1900099C00668C67 /* Images.xcassets */; };
+		C3326356190009FF00668C67 /* larussoSTD.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2476F16977BFEC094191FF /* larussoSTD.dylib */; };
 		C39E5271175BAEE1007E9DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E5270175BAEE1007E9DBD /* Foundation.framework */; };
 		C39E527C175BAEF7007E9DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E5270175BAEE1007E9DBD /* Foundation.framework */; };
 		C39E527D175BAF13007E9DBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24745767086B740A4C9E2F /* Cocoa.framework */; };
@@ -15,7 +23,20 @@
 		C39E52A3175BE692007E9DBD /* NSImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = C39E529D175BE692007E9DBD /* NSImage+Resize.h */; };
 		C39E52A4175BE692007E9DBD /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E529E175BE692007E9DBD /* NSImage+Resize.m */; };
 		C39E52A8175BE731007E9DBD /* LarussoSTD-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C39E52A6175BE731007E9DBD /* LarussoSTD-Prefix.pch */; };
+		FD24763645B7E87AFE607BA6 /* LAMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2471B34CB6FCC47738E5A4 /* LAMainWindow.m */; };
+		FD247E22FC4DC25470778A33 /* NSWindow+LACustomWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2473D7560E211BD083227C /* NSWindow+LACustomWindow.h */; };
+		FD247ECA5B15DD2F514C60CB /* NSWindow+LACustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FD247C54B4C8EDCB867122ED /* NSWindow+LACustomWindow.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3326354190009F000668C67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD247D72CB3CC4FEC55E39BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD247E350C2591186D0168EA;
+			remoteInfo = larussoSTD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C39E526D175BAEE1007E9DBD /* CopyFiles */ = {
@@ -30,6 +51,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C33263221900099C00668C67 /* larussoSTD_controls_check_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = larussoSTD_controls_check_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33263251900099C00668C67 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C33263261900099C00668C67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C33263271900099C00668C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C332632A1900099C00668C67 /* larussoSTD_controls_check_app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "larussoSTD_controls_check_app-Info.plist"; sourceTree = "<group>"; };
+		C332632C1900099C00668C67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C332632E1900099C00668C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C33263301900099C00668C67 /* larussoSTD_controls_check_app-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "larussoSTD_controls_check_app-Prefix.pch"; sourceTree = "<group>"; };
+		C33263321900099C00668C67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C33263341900099C00668C67 /* LAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAppDelegate.h; sourceTree = "<group>"; };
+		C33263351900099C00668C67 /* LAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAppDelegate.m; sourceTree = "<group>"; };
+		C33263381900099C00668C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C332633A1900099C00668C67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C33263411900099C00668C67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C39E526F175BAEE1007E9DBD /* liblarussoSTDiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblarussoSTDiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E5270175BAEE1007E9DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C39E5285175BCFF8007E9DBD /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
@@ -39,12 +74,25 @@
 		C39E529E175BE692007E9DBD /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
 		C39E52A6175BE731007E9DBD /* LarussoSTD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LarussoSTD-Prefix.pch"; path = "../LarussoSTD-Prefix.pch"; sourceTree = "<group>"; };
 		C39E52A7175BE731007E9DBD /* LarussoSTDiOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LarussoSTDiOS-Prefix.pch"; path = "../LarussoSTDiOS-Prefix.pch"; sourceTree = "<group>"; };
+		FD2471B34CB6FCC47738E5A4 /* LAMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMainWindow.m; sourceTree = "<group>"; };
+		FD2473D7560E211BD083227C /* NSWindow+LACustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+LACustomWindow.h"; sourceTree = "<group>"; };
 		FD24745767086B740A4C9E2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FD24757440B8D77DDEF6F1B4 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		FD2476F16977BFEC094191FF /* larussoSTD.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = larussoSTD.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD247C54B4C8EDCB867122ED /* NSWindow+LACustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+LACustomWindow.m"; sourceTree = "<group>"; };
+		FD247D9E5C136EE35CFE5F08 /* LAMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMainWindow.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C332631F1900099C00668C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3326356190009FF00668C67 /* larussoSTD.dylib in Frameworks */,
+				C33263231900099C00668C67 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C39E526C175BAEE1007E9DBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +113,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C33263241900099C00668C67 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C33263251900099C00668C67 /* AppKit.framework */,
+				C33263261900099C00668C67 /* CoreData.framework */,
+				C33263271900099C00668C67 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C33263281900099C00668C67 /* larussoSTD_controls_check_app */ = {
+			isa = PBXGroup;
+			children = (
+				C33263341900099C00668C67 /* LAAppDelegate.h */,
+				C33263351900099C00668C67 /* LAAppDelegate.m */,
+				C33263371900099C00668C67 /* MainMenu.xib */,
+				C332633A1900099C00668C67 /* Images.xcassets */,
+				C33263291900099C00668C67 /* Supporting Files */,
+				FD2471B34CB6FCC47738E5A4 /* LAMainWindow.m */,
+				FD247D9E5C136EE35CFE5F08 /* LAMainWindow.h */,
+			);
+			path = larussoSTD_controls_check_app;
+			sourceTree = "<group>";
+		};
+		C33263291900099C00668C67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C332632A1900099C00668C67 /* larussoSTD_controls_check_app-Info.plist */,
+				C332632B1900099C00668C67 /* InfoPlist.strings */,
+				C332632E1900099C00668C67 /* main.m */,
+				C33263301900099C00668C67 /* larussoSTD_controls_check_app-Prefix.pch */,
+				C33263311900099C00668C67 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C39E5298175BE692007E9DBD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +157,8 @@
 				C39E529B175BE692007E9DBD /* LarussoSTD.m */,
 				C39E529D175BE692007E9DBD /* NSImage+Resize.h */,
 				C39E529E175BE692007E9DBD /* NSImage+Resize.m */,
+				FD247C54B4C8EDCB867122ED /* NSWindow+LACustomWindow.m */,
+				FD2473D7560E211BD083227C /* NSWindow+LACustomWindow.h */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -91,6 +177,7 @@
 			children = (
 				C39E5298175BE692007E9DBD /* Classes */,
 				C39E5285175BCFF8007E9DBD /* Rakefile */,
+				C33263281900099C00668C67 /* larussoSTD_controls_check_app */,
 				FD247BB6C562A45C6EBDFCAC /* Products */,
 				FD247EF03CE712558754F4E9 /* Frameworks */,
 				FD24757440B8D77DDEF6F1B4 /* .travis.yml */,
@@ -102,6 +189,7 @@
 			children = (
 				FD2476F16977BFEC094191FF /* larussoSTD.dylib */,
 				C39E526F175BAEE1007E9DBD /* liblarussoSTDiOS.a */,
+				C33263221900099C00668C67 /* larussoSTD_controls_check_app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +199,8 @@
 			children = (
 				FD24745767086B740A4C9E2F /* Cocoa.framework */,
 				C39E5270175BAEE1007E9DBD /* Foundation.framework */,
+				C33263411900099C00668C67 /* XCTest.framework */,
+				C33263241900099C00668C67 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,12 +215,31 @@
 				C39E52A0175BE692007E9DBD /* LarussoSTD.h in Headers */,
 				C39E52A3175BE692007E9DBD /* NSImage+Resize.h in Headers */,
 				C39E52A8175BE731007E9DBD /* LarussoSTD-Prefix.pch in Headers */,
+				FD247E22FC4DC25470778A33 /* NSWindow+LACustomWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C33263211900099C00668C67 /* larussoSTD_controls_check_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C33263521900099D00668C67 /* Build configuration list for PBXNativeTarget "larussoSTD_controls_check_app" */;
+			buildPhases = (
+				C332631E1900099C00668C67 /* Sources */,
+				C332631F1900099C00668C67 /* Frameworks */,
+				C33263201900099C00668C67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3326355190009F000668C67 /* PBXTargetDependency */,
+			);
+			name = larussoSTD_controls_check_app;
+			productName = larussoSTD_controls_check_app;
+			productReference = C33263221900099C00668C67 /* larussoSTD_controls_check_app.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C39E526E175BAEE1007E9DBD /* larussoSTDiOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39E5279175BAEE1007E9DBD /* Build configuration list for PBXNativeTarget "larussoSTDiOS" */;
@@ -180,6 +289,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FD247624BA48108696A6AFCB;
 			productRefGroup = FD247BB6C562A45C6EBDFCAC /* Products */;
@@ -188,11 +298,36 @@
 			targets = (
 				FD247E350C2591186D0168EA /* larussoSTD */,
 				C39E526E175BAEE1007E9DBD /* larussoSTDiOS */,
+				C33263211900099C00668C67 /* larussoSTD_controls_check_app */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		C33263201900099C00668C67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C332632D1900099C00668C67 /* InfoPlist.strings in Resources */,
+				C332633B1900099C00668C67 /* Images.xcassets in Resources */,
+				C33263331900099C00668C67 /* Credits.rtf in Resources */,
+				C33263391900099C00668C67 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C332631E1900099C00668C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C332632F1900099C00668C67 /* main.m in Sources */,
+				C33263361900099C00668C67 /* LAAppDelegate.m in Sources */,
+				FD24763645B7E87AFE607BA6 /* LAMainWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C39E526B175BAEE1007E9DBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,12 +341,97 @@
 			files = (
 				C39E52A1175BE692007E9DBD /* LarussoSTD.m in Sources */,
 				C39E52A4175BE692007E9DBD /* NSImage+Resize.m in Sources */,
+				FD247ECA5B15DD2F514C60CB /* NSWindow+LACustomWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C3326355190009F000668C67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD247E350C2591186D0168EA /* larussoSTD */;
+			targetProxy = C3326354190009F000668C67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C332632B1900099C00668C67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C332632C1900099C00668C67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C33263311900099C00668C67 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C33263321900099C00668C67 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C33263371900099C00668C67 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C33263381900099C00668C67 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		C332634E1900099D00668C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "larussoSTD_controls_check_app/larussoSTD_controls_check_app-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "larussoSTD_controls_check_app/larussoSTD_controls_check_app-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C332634F1900099D00668C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "larussoSTD_controls_check_app/larussoSTD_controls_check_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "larussoSTD_controls_check_app/larussoSTD_controls_check_app-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
 		C39E527A175BAEE1007E9DBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +549,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C33263521900099D00668C67 /* Build configuration list for PBXNativeTarget "larussoSTD_controls_check_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C332634E1900099D00668C67 /* Release */,
+				C332634F1900099D00668C67 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C39E5279175BAEE1007E9DBD /* Build configuration list for PBXNativeTarget "larussoSTDiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
